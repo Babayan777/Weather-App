@@ -1,0 +1,87 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Recursive', sans-serif;
+    overflow: hidden;
+}
+body{
+    background-image:url("./img/cloud.jpeg");
+    background-size: cover;
+    background-position:center;
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align: center;
+    transition:background-image 1s ease;
+}
+.app-wrap{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    width:50%;
+    height:100vh;
+    background-color: rgba(7,7,7,0.3);
+}
+.app-wrap *{
+    margin-top: 20px;
+}
+input{
+    background-color:transparent;
+    border:none;
+    border-bottom: 3px solid white;
+    outline:none;
+    caret-color:white;
+    font-size:24px;
+    color:white;
+    padding-bottom:10px;
+    width:329px;
+}
+input::placeholder{
+    color: white;
+}
+.location .city{
+    font-size:55px;
+    color:white;
+    font-weight: bold;
+}
+.location .date{
+    font-size:16px;
+    color:white;
+}
+.current .temp{
+    margin-top:20px;
+    margin-bottom: 20px;
+    font-size:100px;
+    color:white;
+}
+.weather{
+    font-style: italic;
+    font-size:24px;
+    color:white;
+    margin-top:40px;
+    margin-bottom: 40px;
+}
+.min-max{
+    color:white;
+    font-size:18px;
+}
+
+@media (max-width:740px){
+    .app-wrap{
+        width:70%;
+    }
+    input{
+        width:250px;
+        font-size:18px;
+    }
+}
+
+@media (max-width:520px){
+    .app-wrap{
+        width:100%;
+    }
+}
